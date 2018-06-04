@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="javascript," />
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="talk is cheap show me your code">
+<meta name="description" content="第五章 引用类型 作为值得函数因为ECMAScript中的函数名本身就是变量，所以函数也可以作为值来使用。也就是说，不仅可以像传递参数一样把一个函数传给另个函数，而且可以将一个函数作为另个函数的结果返回。例子：1234567891011121314function callSomeFunction(someFunction,someArgument)&amp;#123;	return someFuncti">
+<meta name="keywords" content="javascript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="javascript_book_notes">
+<meta property="og:title" content="javascript高级程序设计笔记">
 <meta property="og:url" content="http://yoursite.com/2018/05/08/javascript-book-notes/index.html">
 <meta property="og:site_name" content="Z">
-<meta property="og:description" content="talk is cheap show me your code">
+<meta property="og:description" content="第五章 引用类型 作为值得函数因为ECMAScript中的函数名本身就是变量，所以函数也可以作为值来使用。也就是说，不仅可以像传递参数一样把一个函数传给另个函数，而且可以将一个函数作为另个函数的结果返回。例子：1234567891011121314function callSomeFunction(someFunction,someArgument)&amp;#123;	return someFuncti">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-08T03:12:06.903Z">
+<meta property="og:updated_time" content="2018-05-08T06:48:44.313Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="javascript_book_notes">
-<meta name="twitter:description" content="talk is cheap show me your code">
+<meta name="twitter:title" content="javascript高级程序设计笔记">
+<meta name="twitter:description" content="第五章 引用类型 作为值得函数因为ECMAScript中的函数名本身就是变量，所以函数也可以作为值来使用。也就是说，不仅可以像传递参数一样把一个函数传给另个函数，而且可以将一个函数作为另个函数的结果返回。例子：1234567891011121314function callSomeFunction(someFunction,someArgument)&amp;#123;	return someFuncti">
 
 
 
@@ -125,7 +126,7 @@
 
 
 
-  <title>javascript_book_notes | Z</title>
+  <title>javascript高级程序设计笔记 | Z</title>
   
 
 
@@ -313,7 +314,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">javascript_book_notes</h1>
+          <h1 class="post-title" itemprop="name headline">javascript高级程序设计笔记</h1>
         
 
         <div class="post-meta">
@@ -335,6 +336,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/book/" itemprop="url" rel="index">
+                    <span itemprop="name">book</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -363,7 +386,11 @@
       
 
       
-        
+        <h4 id="第五章-引用类型"><a href="#第五章-引用类型" class="headerlink" title="第五章 引用类型"></a>第五章 引用类型</h4><ol>
+<li>作为值得函数<br><em>因为ECMAScript中的函数名本身就是变量，所以函数也可以作为值来使用。也就是说，不仅可以像传递参数一样把一个函数传给另个函数，而且可以将一个函数作为另个函数的结果返回。例子：</em><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">function callSomeFunction(someFunction,someArgument)&#123;</span><br><span class="line">	return someFunction(someArgument);</span><br><span class="line">&#125;</span><br><span class="line">function add10(num)&#123;</span><br><span class="line">	return num+10;</span><br><span class="line">&#125;</span><br><span class="line">var result1=callSomeFunction(add10,10);</span><br><span class="line">alert(result1); //20</span><br><span class="line"></span><br><span class="line">function getGreeting(name)&#123;</span><br><span class="line">	return &quot;Hello, &quot;+name;</span><br><span class="line">&#125;</span><br><span class="line">var result2=callSomeFunction(getGreeting,&quot;Nicholas&quot;);</span><br><span class="line">alert(result2); //&quot;Hello, Nicholas&quot;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+
       
     </div>
     
@@ -377,6 +404,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/javascript/" rel="tag"># javascript</a>
+          
+        </div>
       
 
       
@@ -450,8 +483,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -477,7 +519,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -488,7 +530,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -521,6 +563,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#第五章-引用类型"><span class="nav-number">1.</span> <span class="nav-text">第五章 引用类型</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

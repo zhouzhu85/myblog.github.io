@@ -315,7 +315,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/08/javascript-book-notes/" itemprop="url">javascript_book_notes</a></h1>
+                <a class="post-title-link" href="/2018/05/08/javascript-book-notes/" itemprop="url">javascript高级程序设计笔记</a></h1>
         
 
         <div class="post-meta">
@@ -337,6 +337,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/book/" itemprop="url" rel="index">
+                    <span itemprop="name">book</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -367,7 +389,11 @@
       
         
           
-            
+            <h4 id="第五章-引用类型"><a href="#第五章-引用类型" class="headerlink" title="第五章 引用类型"></a>第五章 引用类型</h4><ol>
+<li>作为值得函数<br><em>因为ECMAScript中的函数名本身就是变量，所以函数也可以作为值来使用。也就是说，不仅可以像传递参数一样把一个函数传给另个函数，而且可以将一个函数作为另个函数的结果返回。例子：</em><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">function callSomeFunction(someFunction,someArgument)&#123;</span><br><span class="line">	return someFunction(someArgument);</span><br><span class="line">&#125;</span><br><span class="line">function add10(num)&#123;</span><br><span class="line">	return num+10;</span><br><span class="line">&#125;</span><br><span class="line">var result1=callSomeFunction(add10,10);</span><br><span class="line">alert(result1); //20</span><br><span class="line"></span><br><span class="line">function getGreeting(name)&#123;</span><br><span class="line">	return &quot;Hello, &quot;+name;</span><br><span class="line">&#125;</span><br><span class="line">var result2=callSomeFunction(getGreeting,&quot;Nicholas&quot;);</span><br><span class="line">alert(result2); //&quot;Hello, Nicholas&quot;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+
           
         
       
@@ -600,7 +626,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -611,7 +637,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
